@@ -29,7 +29,7 @@
 2.1) Write a SQL query that returns the city, state, and estimated population in
      2018 from the "cities" table.
 */
-
+SELECT city, state, population_estimate_2018 FROM cities;
 -- your query here
 
 \echo ========= Problem 2.2 ====================================================
@@ -38,7 +38,7 @@
 2.2) Write a SQL query that returns all of the airport names contained in the
      "airports" table.
 */
-
+SELECT name FROM airports;
 -- your query here
 
 ---- Phase 3: Add WHERE clauses ------------------------------------------------
@@ -50,7 +50,7 @@
 3.1) Write a SQL query that uses a WHERE clause to get the estimated population
      in 2018 of the city of San Diego.
 */
-
+SELECT population_estimate_2018, city FROM cities WHERE city = 'San Diego';
 -- your query here
 
 \echo ========= Problem 3.2 ====================================================
@@ -58,10 +58,10 @@
 /*
 3.2) Write a SQL query that uses a WHERE clause to get the city, state, and
      estimated population in 2018 of cities in this list:
-      Phoenix, Jacksonville, Charlotte, Nashville.
+     Phoenix, Jacksonville, Charlotte, Nashville.
 */
 
- -- your query here
+-- your query here
 
 \echo ========= Problem 3.3 ====================================================
 \echo
